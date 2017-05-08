@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="300" height="300">
+</canvas>
+<script>
+function draw() {
+var num = prompt("How many circles in a roll do you want");
+var fort = parseInt(num,10);
+
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+
+
+
+	context.fillStyle = "#ff0000"
+	context.beginPath();
+	context.arc(155, 100, 100, 0, 2 * Math.PI , true);
+	context.closePath();
+	context.fill();
+
+}
+
+
+
+</script>
+</body>
+</html>
